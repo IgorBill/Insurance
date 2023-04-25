@@ -4,7 +4,7 @@
     --second-text-color: #737373;
 }
 
-.bbody {
+body {
     margin: 0;
     background: #FAFAFA;
 }
@@ -44,6 +44,9 @@ nav {
     align-items: center;
     color: #FFFFFF;    
 }
+.icons {
+    display: none;
+}
 
 .list-login-container {
     display: flex;
@@ -59,12 +62,13 @@ nav {
     font-weight: 600;
     font-size: 14px;     
     text-align: center;
-    letter-spacing: 0.2px;       
+    letter-spacing: 0.2px;  
+    gap: 21px;     
 }
 
-.navList li {
+/* .navList li {
     margin-right: 21px;    
-}
+} */
 
 .navList li a {
     color: #FFFFFF; 
@@ -190,7 +194,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     padding: 0px;
     gap: 30px;
 }
@@ -314,7 +318,7 @@ nav {
     color: var(--text-color);
     margin: 0;
 }
-.testimonial-main-content p{
+.testimonial-main-content p {
     width: 470px;
     margin: 0;
     font-family: 'Montserrat';
@@ -649,7 +653,7 @@ nav {
 /* === CONTACT === */
 .contact {
     position: relative;
-    height: 1223px;
+    height: 1223px;       
 }
 .contact-back {
     height: 807px;
@@ -666,7 +670,7 @@ nav {
     padding: 50px 0px;
     gap: 50px;
     width: 1050px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .contact-top {
@@ -687,6 +691,7 @@ nav {
 }
 .contact-top-text-block h2 {
     width: 465px;
+    margin: 0;
     font-family: 'Montserrat'; 
     font-weight: 700;
     font-size: 40px;
@@ -696,6 +701,7 @@ nav {
 }
 .contact-top-text-block p {
     width: 465px;
+    margin: 0;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 14px;
@@ -718,10 +724,14 @@ nav {
     padding: 0px;
     background: #FFFFFF;
 }
+.contact-main-content-cover1 {
+    display: none;
+}
 .contact-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 40px 50px;
     gap: 40px;
 }
@@ -794,19 +804,17 @@ nav {
     border: 1px solid #E6E6E6;
     border-radius: 5px;
 }
-.form-group select {
+.form-group select {    
     border: 1px solid #DDDDDD; 
     appearance: none;
-    background: url(../image/arrow.png) no-repeat right;
+    background-image: url(../image/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
     background-position-x: calc(100% - 29px);  
 }
 /* ================ */
 
 /* === FOOTER === */
-footer {    
-    /* display: flex; */
-    /* margin: auto; */
-}
 .consulting {
     width: 1050px;
     margin: auto;
@@ -953,4 +961,264 @@ footer {
     padding: 0px;
     gap: 20px;
 }
+/* ================ */
+
+/* === MEDIA === */
+@media (max-width: 1049px) {
+    nav {
+        width: auto;
+        position: relative;
+        flex-direction: column;
+        /* background: #F7F7F7; */
+        justify-content: center;
+    }
+    .brand-icons {
+        width: 340px;
+        margin-top: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .brand {
+        font-weight: 700;
+        /* margin-top: 23px; */
+        color: var(--text-color);
+        width: auto;
+        height: auto;
+    }
+    .icons {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-login-container {
+        justify-content: center;
+    } 
+    .list-login-container {
+        width: auto;
+        height: auto;
+    }
+    .navList {
+        flex-direction: column;
+        margin-top: 83px;
+        margin-bottom: 98px;
+        gap: 30px;
+    }
+    .navList li a {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: var(--second-text-color);
+    }
+    .login-registration {
+        display: none;
+    }
+    /* === HERO === */
+    .hero{
+        height: 1474px;
+    }
+    .hero-container {
+        height: 1474px;
+    }
+    .hero-container::before {
+        height: 1474px;
+    }
+    .hero-main-content {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width: 340px;
+        gap: 40px;
+    }
+    .hero-main-content h1 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.4;
+    }
+    .hero-main-content h4 {
+        margin: 0;
+        max-width: 275px;
+    }
+    .hero-buttons {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 25px;
+    }
+    .hero-button-quote {
+        padding: 10px 36px;
+        margin: 0;
+    }
+    .hero-button-learn {
+        padding: 10px 36px;
+        margin: 0;
+    }
+    .card {
+        margin-top: 0;
+    }
+    .card-list {
+        flex-direction: column;
+    }
+    /* === FEATURES === */
+    .features {
+        height: auto;
+    }
+    .features-container {        
+        width: auto;
+        padding: 80px 0px;
+    }
+    .features-list {
+        flex-direction: column;
+        margin: 0;
+    }
+    .features-items p {
+        width: 234px;
+    }
+    /* === TESTIMONIALS === */
+    .testimonials {
+        height: auto;
+    }
+    .testimonial-container {
+        padding: 45px 0px;
+        gap: 60px;
+    }
+    .testimonial-main-content p {
+        width: 280px;
+    }
+    .testimonial-list-content {
+        flex-direction: column;
+    }
+    /* === SUBSCRIBE === */
+    .subscribe {
+        height: auto;
+    }
+    .subscribe-brands-list {
+        width: auto;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .subscribe-container {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        padding: 30px 0px;
+    }
+    .subscribe-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .subscribe-content h3 {
+        width: 260px;
+        text-align: center;
+    }
+    .input-group {
+        width: 337px;
+    }
+    /* === PRICING === */
+    .pricing {
+        width: auto;
+        padding: 45px 0px;
+        gap: 60px;
+        margin-bottom: 35px;
+    }
+    .pricing-header {
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .pricing p {
+        font-weight: 700;
+        width: 264px;
+    }
+    .price-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .price-all {
+        border-radius: 0;
+    }
+    /* === CONTACT === */
+    .contact {
+        height: auto;
+    }
+    .contact-back {
+        height: 1840px;
+    }
+    .contact-container {
+        padding: 45px 0px;
+        gap: 60px;
+        width: 414px;
+        /* margin: 0 auto; */
+        justify-content: center;
+        left: calc(50% - 414px/2);        
+    }
+    .contact-top {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-top-text-block {
+        width: auto;
+    }
+    .contact-top-text-block h2 {
+        width: 335px;
+    }
+    .contact-top-text-block p {
+        width: 335px;
+    }
+    .contact-top-map img {
+        width: 314px;
+    }
+    .contact-main-content {
+        flex-direction: column;
+    }
+    .contact-main-content-cover1 {
+        display: flex;
+    }
+    .contact-main-content-cover2 {
+        display: none;
+    }
+    .contact-card h3 {
+        width: 314px;
+        font-size: 40px;
+        line-height: 1.4; 
+    }
+    .contact-card-button {
+        width: 314px;
+    }
+    .contact-card-content {
+        width: 314px;
+        gap: 5px;
+    }
+    .form-group input,
+    .form-group select {
+        width: 314px;
+    }
+    /* === FOOTER === */
+    .consulting {
+        width: 242px;
+        flex-direction: column;
+        gap: 50px;        
+    }
+    .consulting-text p {
+        width: 184px;
+    }
+    .consulting-button {
+        align-items: flex-start;
+    }
+    .company-info-container {
+        width: 240px;
+        flex-direction: column;
+    }
+    .made-with {
+        width: 230px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
 /* ================ */
